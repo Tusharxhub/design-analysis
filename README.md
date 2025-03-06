@@ -30,7 +30,6 @@
 ---
 
 
-| ![Project Structure](https://github.com/Tusharxhub/design-analysis/blob/main/project-structure.png?raw=true) | ![Algorithm Visualization](https://github.com/Tusharxhub/design-analysis/blob/main/algorithm-visualization.png?raw=true) | ![Performance Analysis](https://github.com/Tusharxhub/design-analysis/blob/main/performance-analysis.png?raw=true) |
 
 ---
 
