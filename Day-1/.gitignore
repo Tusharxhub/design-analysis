@@ -1,11 +1,8 @@
-# Ignore all compiled Java class files
-*.class
-
-# Ignore all files in the "bin" or "out" directories (common build folders)
-bin/
-out/
-
-# Ignore IDE-specific files (optional)
-*.iml
-.idea/
-.vscode/
+echo "*.class" >> .gitignore
+echo "bin/" >> .gitignore
+echo "out/" >> .gitignore
+echo "target/" >> .gitignore
+echo "build/" >> .gitignore
+git add .gitignore
+git commit -m "Added .gitignore to ignore .class files"
+git push origin main
