@@ -1,2 +1,11 @@
-/bubblesort.class
-/Insertionsort.class
+# Ignore all compiled Java class files
+*.class
+
+# Ignore all files in the "bin" or "out" directories (common build folders)
+bin/
+out/
+
+# Ignore IDE-specific files (optional)
+*.iml
+.idea/
+.vscode/
