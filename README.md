@@ -1,9 +1,6 @@
 # **💬 Design Analysis**  
 🚀 *A deep dive into algorithmic design, efficiency, and problem-solving techniques.*  
 
-<p align="center">
-  <img src="https://github.com/Tusharxhub/design-analysis/blob/main/logo.png?raw=true">
-</p>
 
 ---
 
