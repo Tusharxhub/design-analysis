@@ -1,8 +1,8 @@
-echo "*.class" >> .gitignore
-echo "bin/" >> .gitignore
-echo "out/" >> .gitignore
-echo "target/" >> .gitignore
-echo "build/" >> .gitignore
+*.class
+bin/
+out/
+target/
+build/
 git add .gitignore
 git commit -m "Added .gitignore to ignore .class files"
 git push origin main
