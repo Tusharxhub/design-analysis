@@ -13,7 +13,6 @@ class Item {
 public class Knapsack {
     static double fractionalKnapsack(Item[] items, int capacity) {
         Arrays.sort(items, (a, b) -> Double.compare((double) b.value / b.weight, (double) a.value / a.weight));
-        
         double totalValue = 0;
         for (Item item : items) {
             if (capacity >= item.weight) {
@@ -30,7 +29,6 @@ public class Knapsack {
     static int knapsackDP(Item[] items, int capacity) {
         int n = items.length;
         int[][] dp = new int[n + 1][capacity + 1];
-        
         for (int i = 1; i <= n; i++) {
             for (int w = 1; w <= capacity; w++) {
                 if (items[i - 1].weight <= w) {
@@ -46,7 +44,6 @@ public class Knapsack {
     public static void main(String[] args) {
         Item[] items = { new Item(10, 60), new Item(20, 100), new Item(30, 120) };
         int capacity = 50;
-
         System.out.println("Greedy Approach Value: " + fractionalKnapsack(items, capacity));
         System.out.println("Dynamic Programming Approach Value: " + knapsackDP(items, capacity));
     }
