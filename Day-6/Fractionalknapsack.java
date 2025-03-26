@@ -30,3 +30,10 @@ public class Fractionalknapsack {
         System.out.println("Maximum value we can obtain = " + getMaxValue(W, items));
     }
 }
+
+
+
+
+
+// ? Time Complexity: O(n log n)
+// ? Space Complexity: O(n)

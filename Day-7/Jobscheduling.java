@@ -50,3 +50,8 @@ class JobScheduling {
 // ? To perform enter the following command:
 // ? javac Jobscheduling.java
 //? java Jobscheduling
+
+
+
+//? Time Complexity: O(n^2)
+//? Space Complexity: O(n)

@@ -28,3 +28,10 @@ class OptimalMergeSort {
 // ? To perform enter the following command:
 // ? javac OptimalMergeSort.java
 //? java OptimalMergeSort
+
+
+
+
+
+//? Time Complexity: O(n log n)
+//? Space Complexity: O(n)

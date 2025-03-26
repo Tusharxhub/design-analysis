@@ -48,3 +48,10 @@ public class Knapsack {
         System.out.println("Dynamic Programming Approach Value: " + knapsackDP(items, capacity));
     }
 }
+
+
+
+// ? Time Complexity: O(n log n) for sorting
+// ? Space Complexity: O(1) for greedy approach
+// ? Time Complexity: O(n * capacity) for dynamic programming
+// ? Space Complexity: O(n * capacity) for dynamic programming
