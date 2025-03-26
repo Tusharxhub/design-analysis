@@ -30,3 +30,4 @@ public class Fractionalknapsack {
         System.out.println("Maximum value we can obtain = " + getMaxValue(W, items));
     }
 }
++
