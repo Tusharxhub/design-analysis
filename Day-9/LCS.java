@@ -21,3 +21,9 @@ public class LCS {
         System.out.println("Length of LCS: " + lcs(X, Y));
     }
 }
+
+
+
+
+// ? Time Complexity: O(m * n)
+// ? Space Complexity: O(m * n)
