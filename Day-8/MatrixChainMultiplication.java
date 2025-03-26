@@ -29,3 +29,9 @@ class MatrixChainMultiplication {
 // ? To perform enter the following command:
 // ? javac MatrixChainMultiplication.java
 //? java MatrixChainMultiplication
+
+
+
+
+//? Time Complexity: O(n^3)
+//? Space Complexity: O(n^2)
