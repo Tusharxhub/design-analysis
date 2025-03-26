@@ -10,8 +10,7 @@ class MatrixChainMultiplication {
                 int j = i + len - 1;
                 dp[i][j] = Integer.MAX_VALUE;
                 for (int k = i; k < j; k++) {
-                    int cost = dp[i][k] + dp[k + 1][j] + p[i - 1] * p[k] * p[j];
-                    dp[i][j] = Math.min(dp[i][j], cost);
+                    dp[i][j] = Math.min(dp[i][j], dp[i][k] + dp[k + 1][j] + p[i - 1] * p[k] * p[j]);
                 }
             }
         }
@@ -20,8 +19,7 @@ class MatrixChainMultiplication {
 
     public static void main(String[] args) {
         int[] matrices = {1, 2, 3, 4};
-        int n = matrices.length;
-        System.out.println("Minimum number of multiplications: " + matrixChainOrder(matrices, n));
+        System.out.println("Minimum number of multiplications: " + matrixChainOrder(matrices, matrices.length));
     }
 }
 
