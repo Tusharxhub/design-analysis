@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 class Item {
     int weight, value;
-    public Item(int weight, int value) {
+    Item(int weight, int value) {
         this.weight = weight;
         this.value = value;
     }
