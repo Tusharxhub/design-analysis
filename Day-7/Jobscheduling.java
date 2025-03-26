@@ -16,10 +16,7 @@ class Job {
 class JobScheduling {
     static void scheduleJobs(Job[] jobs) {
         Arrays.sort(jobs, (a, b) -> b.profit - a.profit);
-        int maxDeadline = 0;
-        for (Job job : jobs) {
-            maxDeadline = Math.max(maxDeadline, job.deadline);
-        }
+        int maxDeadline = Arrays.stream(jobs).mapToInt(job -> job.deadline).max().orElse(0);
         int[] result = new int[maxDeadline + 1];
         boolean[] slot = new boolean[maxDeadline + 1];
         int totalProfit = 0;
@@ -35,9 +32,7 @@ class JobScheduling {
         }
         System.out.println("Scheduled Jobs:");
         for (int i = 1; i <= maxDeadline; i++) {
-            if (slot[i]) {
-                System.out.print("Job " + result[i] + " ");
-            }
+            if (slot[i]) System.out.print("Job " + result[i] + " ");
         }
         System.out.println("\nTotal Profit: " + totalProfit);
     }
