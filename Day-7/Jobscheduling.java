@@ -14,7 +14,7 @@ class Job {
 }
 
 class JobScheduling {
-    static void scheduleJobs(Job[] jobs) {
+    void scheduleJobs(Job[] jobs) {
         Arrays.sort(jobs, (a, b) -> b.profit - a.profit);
         int maxDeadline = Arrays.stream(jobs).mapToInt(job -> job.deadline).max().orElse(0);
         int[] result = new int[maxDeadline + 1];
@@ -39,7 +39,8 @@ class JobScheduling {
 
     public static void main(String[] args) {
         Job[] jobs = { new Job(1, 2, 100), new Job(2, 1, 50), new Job(3, 2, 10), new Job(4, 1, 20), new Job(5, 3, 30) };
-        scheduleJobs(jobs);
+        JobScheduling scheduler = new JobScheduling();
+        scheduler.scheduleJobs(jobs);
     }
 }
 
