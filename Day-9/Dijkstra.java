@@ -44,3 +44,10 @@ class Dijkstra {
         dijkstra(graph, 0); 
     }
 }
+
+
+
+
+
+// ? Time Complexity: O(V^2) where V is the number of vertices in the graph
+// ? Space Complexity: O(V) where V is the number of vertices in the graph
